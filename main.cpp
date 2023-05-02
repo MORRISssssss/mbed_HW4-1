@@ -39,9 +39,9 @@ uint8_t Columns() {
     return cols;
 }
 
-void Putc(uint8_t c) {
-    lcd.putc(c);
+uint8_t Putc(uint8_t c) {
     printf("putc(%c)\r\n", c);
+    return lcd.putc(c);
 }
 
 /** erpc infrastructure */

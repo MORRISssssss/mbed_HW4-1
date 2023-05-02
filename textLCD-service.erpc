@@ -1,0 +1,16 @@
+/*!
+ * You can write copyrights rules here. These rules will be copied into the outputs.
+ */
+
+//@outputDir("erpc_outputs") // output directory
+
+program textLCD_erpc_head; // specify name of output files
+
+interface textLCDService // cover functions for same topic
+{
+    Locate(in uint8 col, in uint8 row) -> void
+    Cls() -> void
+    Rows() -> uint8
+    Columns() -> uint8
+    Putc(in uint8 c) -> uint8
+}
