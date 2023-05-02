@@ -51,7 +51,7 @@ erpc::BasicCodecFactory basic_cf;
 erpc::Crc16 crc16;
 erpc::SimpleServer rpc_server;
 
-/** LED service */
+/** I2C textLCD service */
 textLCDService_service textLCD_service;
 
 
